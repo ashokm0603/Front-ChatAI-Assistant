@@ -1,16 +1,91 @@
-# React + Vite
+<h1 align="center">ChatApp Frontend </h1> 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##  Project Overview
+This is the **frontend** of the ChatApp project built using **React.js**.  
+It provides:
+- Modern Register & Login UI
+- JWT-based authentication
+- ChatGPT-like AI chat interface
+- Streaming AI responses
+- Clean UI with Markdown support
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Technologies Used
+- React.js (Vite)
+- React Router DOM
+- Axios
+- Fetch API (for streaming)
+- React Markdown
+- CSS (Modern Dark UI)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Folder Structure
+```
+src/
+│
+├── assets/
+│
+├── pages/
+│   ├── Login.jsx
+│   └── Register.jsx
+│
+├── services/
+│   └── authService.js
+│
+├── ChatContainer.jsx
+├── App.jsx
+├── main.jsx
+├── index.css
+```
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  How to Run Frontend
+
+```bash
+npm install
+npm run dev
+```
+
+App will run at:
+```
+http://localhost:5173
+```
+
+---
+
+##  Backend Connection
+Make sure backend is running at:
+```
+http://localhost:4000
+```
+
+Update API URLs in:
+```
+src/services/authService.js
+```
+
+---
+
+##  Features
+- Register & Login pages
+- JWT token storage
+- Protected AI chat
+- Chat history UI
+- Streaming AI response
+- Markdown rendering
+
+---
+
+##  UI Highlights
+- Dark modern theme
+- Chat bubbles
+- Auto-scroll
+- Typing cursor effect
+
+---
+
+## 👨‍💻 Author
+Built for MERN + AI Chat Application learning.
